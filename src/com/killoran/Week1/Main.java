@@ -7,11 +7,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         Scanner Input = new Scanner(System.in);
+        Scanner dInput = new Scanner(System.in);
         String decision = "";
         Map<String, Double> cities = new TreeMap<>();
         while (!decision.equals("END")) {
             System.out.println("What city do you plan on visiting");
-            String City = userInput.nextLine();
+            String City = dInput.nextLine();
             System.out.println("What is your high temp for next 5 days in " + City);
             System.out.println("Enter your temp for day 1");
             double d1 = userInput.nextInt();
